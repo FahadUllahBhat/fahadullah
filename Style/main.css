@@ -85,6 +85,7 @@ position:relative;
     border: solid 1px #b7b7b8;
     border-radius: 30px;
     font-family: 'Play', sans-serif;
+    background-color:white;
 }
 .main-btn:hover{
     transition: 0.3s;
