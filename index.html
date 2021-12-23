@@ -1,346 +1,290 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Moon</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
-    <script type='text/javascript' src=''></script>
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
-    <script type='text/javascript'
-        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
-    <style>
-        body {
-            background-color: #f5f3f0;
-
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .container-main {
-            text-align: center;
-        }
-
-        .navbar {
-            border-radius: 0;
-            background-color: #1e4ca0 !important;
-            border: 0;
-        }
-
-        .navbar-brand {
-            color: white !important;
-            font-size: 20px;
-        }
-
-        .container-main div h1 {
-            margin-top: 34%;
-            line-height: 4rem;
-        }
-
-        .navbar-right li a {
-            color: white !important;
-            font-weight: 500;
-        }
-
-        @media screen and (max-width: 998px) {
-            .container-main div img {
-                width: 300px;
-            }
-
-            .container-main div h1 {
-                margin-top: -20px;
-            }
-            .collapse{
-            display: flex;
-            justify-content: flex-start !important;
-        }
-        }
-
-        .span2 {
-            font-size: 60px;
-            font-family: 'Montserrat', sans-serif;
-            color: #1e4ca0;
-            font-weight: 600;
-        }
-
-        .navbar-right li:hover {
-            transition: 0.5s;
-            background-color: #f5f3f0;
-
-        }
-
-        .navbar-right li a:hover {
-            color: rgb(29, 29, 29) !important;
-            font-weight: 600;
-        }
-        .collapse{
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .navbar-toggler{
-        border: 0;
-        margin-left: 1.5rem !important;
-    }
-    .navbar-toggler{
-      width: 38px;
-      padding: 2px;
-     border: none;
-    }
-
-   .navbar-toggler:focus,
-   .navbar-toggler:active,
-   .navbar-toggler-icon:focus{
-       outline: none !important;
-       box-shadow: none !important;
-       border: 0 !important;
-   }
-   .toggler-icon{
-       width: 30px;
-       height: 3px;
-       background-color: tomato;
-       display: block;
-       transition: all 0.2s !important;
-   }
-   .middle-bar{
-       margin:5px auto;
-   }
-   .navbar-toggler .top-bar{
-       transform: rotate(45deg) !important;
-       transform-origin: 10% 10% !important;
-   }
-   .navbar-toggler .middle-bar{
-       opacity: 0;
-       filter: alpha(opacity=0);
-   }
-   .navbar-toggler .bottom-bar{
-    transform: rotate(-45deg) !important;
-    transform-origin: 10% 10% !important;
-   }
-
-
-   .navbar-toggler.collapsed .top-bar{
-       transform: rotate(0) !important;
-   }
-   .navbar-toggler.collapsed .middle-bar{
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
-    margin-right: 10px;
-}
-.navbar-toggler.collapsed .bottom-bar{
-    transform: rotate(0) !important;
-}
-.navbar-toggler.collapsed .toggler-icon{
-    background-color: #f5f3f0 !important;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad Ullah</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--Styling links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
 <body>
-    <div class="navbar-main">
-      
-        <nav class="navbar navbar-expand-lg">
-            <div class="container nav-container">
-            <a class="navbar-brand" href="#">Blue Moon</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
+<div id="first"></div>
+  <!--navbar-start-->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" id="click" data-toggle="collapse" data-target="#portfolio-navbar">
+          <span class="icon-bar icon-bar1"></span>
+          <span class="icon-bar icon-bar2"></span>
+          <span class="icon-bar icon-bar3"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav navbar-right">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+        <a class="navbar-brand" href="#">Fahad Ullah</a>
+      </div>
+      <div class="collapse navbar-collapse" id="portfolio-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item" ><a href="#first" >HOME</a></li>
+          <li class="nav-item" ><a href="#dsem0" >ABOUT</a></li>
+          <li class="nav-item" ><a href="#dsem2" >DESIGNING SKILLS</a></li>
+          <li class="nav-item" ><a href="#dsem3" >CODING SKILLS</a></li>
+          <li class="nav-item" ><a href="#dsem4" >CONTACT</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar-end-->
+
+  <!--main start-->
+  <div class="container-fluid">
+    <div class="col-lg-6">
+      <div class="img1" data-aos="fade-right">
+      </div>
+    </div>
+    <div class="col-lg-6 main-txt">
+      <div class="first-section">
+        <h1 class="main-h1">Fahad Ullah</h1>
+        <h4 class="main-h4">Web Developer | UI & UX Designer | Graphic Designer</h4>
+        <p class="about-p">Hello! I am Web Developer from India, Jammu & Kashmir. I have good enough experience in
+          Website design and building, also i am good at Graphic designing.</p>
+        <div class="main-social-icons">
+          <a href="https://www.facebook.com/fahadullahbhat" class="btn btn-lg main-btn-2" style="padding-left: 19px;padding-right: 18px;"><i
+              class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/itz_phantom_coder/" class="btn btn-lg main-btn-2"><i class="fa fa-instagram"></i></a>
+          <a href="https://github.com/FahadUllahBhat" class="btn btn-lg main-btn-2"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="main-btns">
+          <a href="#dsem4" class="btn btn-lg main-btn">Contact me</a>
+          <a href="#dsem0" class="btn btn-lg main-btn-2"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </div>
+
+      <div class="empty" id="empty"></div>
+<div class="dsem0" id="dsem0"></div>
+      <div class="section-about" id="section-about">
+        <h1 class="main-h1">About me</h1>
+        <h4 class="main-h4">My story</h4>
+        <p class="about-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste quis consequuntur quas sapiente enim,
+          expedita sint labore delectus minus cupiditate blanditiis veritatis. Provident in fugiat natus nulla,
+          laboriosam blanditiis.
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis impedit, at repellendus fugiat
+          provident? Blanditiis eos id ex ducimus fugit, repudiandae ut dolor nam, iusto eius placeat, ratione
+          explicabo!
+        </p>
+        <div class="about-info" id="about-info">
+          <div class="col-md-6">
+            <h4 class="main-h4">AGE: <span>16</span></h4>
+            <h4 class="main-h4">FRELANCE: <span>AVAILABLE</span></h4>
+            <h4 class="main-h4">PHONE: <span>+91 9541676***</span></h4>
+          </div>
+          <div class="col-md-6">
+            <h4 class="main-h4">RESIDENCE: <span>INDIA</span></h4>
+            <h4 class="main-h4">ADRESS: <span>JAMMU & KASHMIR</span></h4>
+            <h4 class="main-h4">E-MAIL: <span>fahadcodes9541@gmail.com</span></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty2" id="em2"></div>
+<div id="dsem2" class="dsem2"></div>
+      <div class="section-designing-skills">
+        <h1 class="main-h1" id="d-skills">Designing Skills</h1>
+        <h4 class="main-h4 creative-ability">Creative Ability</h4>
+        <div class="main-d-skills">
+          <div class="col-md-6">
+            <h4>
+              Web Layout
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:90%">
+                90%
+              </div>
             </div>
-        </div>
-          </nav>
-
-    </div>
-    <div class="container container-main">
-        <div class="row">
-        <div class="col-lg-6">
-            <img src="images/190001, Buchwara Dalgate, Srinagar (2).png" alt="">
-        </div>
-        <div class="col-lg-6">
-            <h1>
-                <span class="span1">Welcome to</span><br> <span class="span2"> Blue Moon </span> <br> <span
-                    class="span3">Official Blog</span>
-            </h1>
-        </div>
-    </div>
-    </div>
-
-    <!--carousel start-->
-
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="mb-3">Some latest items</h3>
-                </div>
-                <div class="col-6 text-right">
-                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
-                        data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              Illustrations
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:60%">
+                60%
+              </div>
             </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <h4>
+              Photoshop
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:85%">
+                85%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              Graphic Design
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:70%">
+                70%
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+
+
+      <div class="empty3"></div>
+      <div id="dsem3" class="dsem3"></div>
+      <div class="section-coding-skills">
+        <h1 class="main-h1" id="c-skills">Coding Skills</h1>
+        <h4 class="main-h4 developing-on">Developing On</h4>
+        <div class="main-c-skills">
+          <div class="col-md-6">
+            <h4>
+              Html
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:95%">
+                95%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              Css
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:92%">
+                92%
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <h4>
+              Javascript
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:30%">
+                30%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              Bootstrap
+            </h4>
+            <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, soluta, odit voluptatum
+              dignissimos illum architecto molestias quia.</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:94%">
+                94%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="empty4"></div>
+     <div class="dsem4" id="dsem4"></div>
+
+     <div class="section-contact" data-aos="fade-right">
+      <h1 class="main-h1">Contact</h1>
+      <h4 class="main-h4 lets-talk">LET'S TALK</h4>
+       <div class="col-md-6">
+         <br>
+         <form class="form" name="contact" data-netlify="true">
+           <label>FULL NAME:</label>
+<input name="User-Name" type="text" placeholder="e.g; Michael" class="form-control">
+<br>
+<label> EMAIL ADRESS:</label>
+<input name="email" type="text" placeholder="example@domain.com" class="form-control">
+<br>
+<label>MESSAGE:</label>
+<br>
+<textarea name="message" placeholder="To Write" class="form-control"></textarea>
+<br>
+<button type="submit" class="btn btn-lg main-btn contact-btn">Contact me &nbsp; <i class="fa fa-caret-right"></i>
+</button>
+</form>
+       </div>
+       <div class="col-md-6">
+         <br>
+         <br>
+         <div class="info">
+          <h2>Fahad Ullah</h2>
+          <br>
+          
+            <h4 class="main-h4">AGE: <span>16</span></h4>
+            <h4 class="main-h4">FRELANCE: <span>AVAILABLE</span></h4>
+            <h4 class="main-h4">PHONE: <span>+91 9541676***</span></h4>
+          
+          
+            <h4 class="main-h4">RESIDENCE: <span>INDIA</span></h4>
+            <h4 class="main-h4">ADRESS: <span>JAMMU & KASHMIR</span></h4>
+            <h4 class="main-h4">E-MAIL: <span>fahadcodes9541@gmail.com</span></h4>
+
+         </div>
+       </div>
+     </div>
+    </div>
+    <!--main end-->
+
+
+    <!--Bootstrap Js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <!-- our aos data -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            offset: 0,
+            duration: 0,
+        });
+        </script>
+    
 </body>
 
 </html>
