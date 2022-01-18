@@ -82,10 +82,10 @@ position:relative;
 .main-btn{
     padding: 12px 28px 12px 28px;
     color: rgb(0, 191, 159);
+    background-color: white;
     border: solid 1px #b7b7b8;
     border-radius: 30px;
     font-family: 'Play', sans-serif;
-    background-color:white;
 }
 .main-btn:hover{
     transition: 0.3s;
@@ -152,6 +152,16 @@ border:solid 1px #1C2833;
         border-radius: 50%;
     background-blend-mode: normal;
    
+    }
+    .main-c-skills{
+        text-align: center;
+    }
+    .main-d-skills{
+        text-align: center;
+    }
+    .circular{
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .main-txt{
         margin-top: 0%;
@@ -352,5 +362,160 @@ border:solid 1px #1C2833;
 }
 .contact-btn{
     width:100%;
+
 }
 /*section contact*/
+
+
+
+.circular{
+    height:100px;
+    width: 100px;
+    position: relative;  
+    border:solid transparent 1px;
+    margin-left: 10px;
+  }
+
+  .circular .inner{
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: white;
+    border-radius: 100%;
+  }
+
+  .circular .number{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    font-size:18px;
+    font-weight:600;
+    color:#1C2833;
+  }
+  .circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+   
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+
+  .circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: rgb(0, 191, 159);
+  }
+
+  .circle .left .progress{
+    z-index:1;
+    animation: left 2s linear both;
+  }
+  @keyframes left{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right {
+    transform: rotate(150deg);
+    z-index:2;
+   
+  }
+  .circle .right .progress{
+    animation: right 2s linear both;
+    animation-delay:2s;
+  }
+  @keyframes right{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+
+  .circle .left2 .progress{
+    z-index:1;
+    animation: left 2s linear both;
+  }
+  @keyframes left2{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right2 {
+    transform: rotate(70deg);
+    z-index:2;
+   
+  }
+  .circle .right2 .progress{
+    animation: right2 2s linear both;
+    animation-delay:1s;
+  }
+  @keyframes right2{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+
+  
+  .circle .left3 .progress{
+    z-index:1;
+    animation: left3 2s linear both;
+  }
+  @keyframes left3{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right3 {
+    transform: rotate(70deg);
+    z-index:2;
+   
+  }
+  .circle .right3 .progress{
+    animation: right3 2s linear both;
+    animation-delay:1s;
+  }
+  @keyframes right3{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+
+  
+  .circle .left4 .progress{
+    z-index:1;
+    animation: left4 2s linear both;
+  }
+  @keyframes left4{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right4 {
+    transform: rotate(110deg);
+    z-index:2;
+   
+  }
+  .circle .right4 .progress{
+    animation: right4 2s linear both;
+    animation-delay:1s;
+  }
+  @keyframes right4{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+  
