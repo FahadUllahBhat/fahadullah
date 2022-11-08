@@ -19,7 +19,7 @@ position: fixed;
 }
 .img1{
     position: fixed !important;
-    top: 0 !important;
+    top: -100px !important;
     left: 0 !important;
     background: rgb(0, 191, 159) url('../Pictures/20221104_200858.png');
     background-blend-mode:multiply;
