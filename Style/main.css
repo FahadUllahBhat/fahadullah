@@ -427,7 +427,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right {
-    transform: rotate(150deg);
+    transform: rotate(355deg);
     z-index:2;
    
   }
@@ -448,11 +448,11 @@ border:solid 1px #1C2833;
   }
   @keyframes left2{
     100%{
-      transform: rotate(180deg);
+      transform: rotate(355deg);
     }
   }
   .circle .right2 {
-    transform: rotate(95deg);
+    transform: rotate(355deg);
     z-index:2;
    
   }
@@ -478,7 +478,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right3 {
-    transform: rotate(98deg);
+    transform: rotate(355deg);
     z-index:2;
    
   }
@@ -504,7 +504,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right4 {
-    transform: rotate(95deg);
+    transform: rotate(355deg);
     z-index:2;
    
   }
