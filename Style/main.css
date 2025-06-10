@@ -427,7 +427,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right {
-    transform: rotate(170deg);
+    transform: rotate(175deg);
     z-index:2;
    
   }
