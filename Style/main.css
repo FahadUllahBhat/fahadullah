@@ -427,7 +427,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right {
-    transform: rotate(185deg);
+    transform: rotate(150deg);
     z-index:2;
    
   }
@@ -452,7 +452,7 @@ border:solid 1px #1C2833;
     }
   }
   .circle .right2 {
-    transform: rotate(70deg);
+    transform: rotate(10deg);
     z-index:2;
    
   }
